@@ -1,0 +1,8 @@
+name = "keremradu-now-playing"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+LASTFM_USERNAME = "keremozdo"
+# Sadece bu adresteki site Worker'ı tarayıcıdan çağırabilir.
+ALLOWED_ORIGIN = "https://keremradu.me"
