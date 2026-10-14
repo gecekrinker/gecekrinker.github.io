@@ -3,9 +3,10 @@ import { FaLastfm, FaSpotify } from "react-icons/fa";
 import { SPOTIFY_PROFILE } from "@/data/links";
 
 const IS_DEV = process.env.NODE_ENV !== "production";
-// Yerelde: now-playing-server.mjs. Canlıda: Cloudflare Worker adresi (NEXT_PUBLIC_NOW_PLAYING_URL, build sırasında verilir).
-// Canlıda adres yoksa istek hiç atılmaz ve kart gizlenir.
-const ENDPOINT = process.env.NEXT_PUBLIC_NOW_PLAYING_URL || (IS_DEV ? "http://127.0.0.1:8787/now-playing" : "");
+// Yerelde: now-playing-server.mjs. Canlıda: Cloudflare Worker adresi.
+// NEXT_PUBLIC_NOW_PLAYING_URL verilirse o kullanılır, verilmezse aşağıdaki Worker adresi (herkese açık bir adres, gizli değil).
+const WORKER_URL = "https://keremradu-now-playin.toosperos.workers.dev/now-playing";
+const ENDPOINT = process.env.NEXT_PUBLIC_NOW_PLAYING_URL || (IS_DEV ? "http://127.0.0.1:8787/now-playing" : WORKER_URL);
 const POLL_MS = 15_000;
 
 type Track = {
@@ -57,7 +58,7 @@ export default function NowPlaying() {
                 if (!res.ok) setState({ kind: "error", hint: body.hint || "now-playing hata verdi" });
                 else setState({ kind: "ok", data: body, receivedAt: Date.now() });
             } catch {
-                if (alive) setState({ kind: "error", hint: "now-playing sunucusuna ulaşılamıyor. `npm run dev:all` ile başlat." });
+                if (alive) setState({ kind: "error", hint: IS_DEV ? "now-playing sunucusuna ulaşılamıyor. `npm run dev:all` ile başlat." : "worker adresine ulaşılamadı (ağ veya CORS / ALLOWED_ORIGIN)." });
             }
         };
         loadRef.current = load;
@@ -84,8 +85,8 @@ export default function NowPlaying() {
         return () => clearInterval(t);
     }, [playing, state]);
 
-    // canlıda (production) hata durumunda kart hiç görünmesin; yerelde nedenini göster
-    if (state.kind === "error" && !IS_DEV) return null;
+    // Her yerde hata nedeni kartta görünür (sorun giderme için). Canlıda gizlemek istersen alttaki satırı aç:
+    // if (state.kind === "error" && !IS_DEV) return null;
 
     const shell = "flex flex-col gap-3 p-3 border border-neutral-500/40 font-mono";
     // sağ üst logo: Spotify çalıyorsa Spotify, değilse (Last.fm'den seçilen şarkı) Last.fm
