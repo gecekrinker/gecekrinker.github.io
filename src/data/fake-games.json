@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Shin Megami Tensei V: Vengeance",
+    "totalHours": 95,
+    "sgdbId": 5444817,
+    "img": "/games/shin-megami-tensei-v-vengeance.png"
+  },
+  {
+    "name": "Shin Megami Tensei III: Nocturne HD Remaster",
+    "totalHours": 70,
+    "sgdbId": 5268114,
+    "img": "/games/shin-megami-tensei-iii-nocturne-hd-remaster.png"
+  },
+  {
+    "name": "Catherine: Full Body",
+    "totalHours": 48,
+    "sgdbId": 5252717,
+    "img": "/games/catherine-full-body.png"
+  },
+  {
+    "name": "Shin Megami Tensei: Digital Devil Saga",
+    "totalHours": 55,
+    "sgdbId": 38976,
+    "img": "/games/shin-megami-tensei-digital-devil-saga.png"
+  },
+  {
+    "name": "Pandora's Tower",
+    "totalHours": 38,
+    "sgdbId": 5250212,
+    "img": "/games/pandora-s-tower.png"
+  }
+]
