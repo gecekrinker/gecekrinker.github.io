@@ -88,7 +88,7 @@ export default function NowPlaying() {
     // Her yerde hata nedeni kartta görünür (sorun giderme için). Canlıda gizlemek istersen alttaki satırı aç:
     // if (state.kind === "error" && !IS_DEV) return null;
 
-    const shell = "flex flex-col gap-3 p-3 border border-neutral-500/40 font-mono";
+    const shell = "flex flex-col gap-3 p-3 min-w-0 border border-neutral-500/40 font-mono";
     // sağ üst logo: Spotify çalıyorsa Spotify, değilse (Last.fm'den seçilen şarkı) Last.fm
     const header = (label: string, active: boolean, source: "spotify" | "lastfm" = "spotify", lastfmUrl?: string | null) => {
         const isLastfm = source === "lastfm";
@@ -117,7 +117,7 @@ export default function NowPlaying() {
     return (
         <div className={shell}>
             {header(data.isPlaying ? "şu an dinliyor" : "son dinlediklerinden", data.isPlaying, source, data.profileUrl)}
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 items-center min-w-0">
                 {t.cover
                     // eslint-disable-next-line @next/next/no-img-element
                     ? <img src={t.cover} alt="" width={64} height={64} className="w-16 h-16 shrink-0 object-cover" />
