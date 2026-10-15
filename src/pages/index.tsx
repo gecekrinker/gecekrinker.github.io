@@ -7,6 +7,7 @@ import Grid from "@/components/grid";
 import Layout from "@/components/layout";
 import MyInfo from "@/components/my_info";
 import NowPlaying from "@/components/now_playing";
+  import NowGaming from "@/components/now_gaming";
 import SocialCards from "@/components/social_cards";
 
 export default function Page(props: { markdown: string }) {
@@ -24,6 +25,7 @@ export default function Page(props: { markdown: string }) {
 
                 <div className="flex flex-col gap-3 mt-4">
                     <NowPlaying/>
+  <NowGaming />
                     <SocialCards/>
                 </div>
             </Layout>
