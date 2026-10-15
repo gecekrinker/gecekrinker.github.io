@@ -1,5 +1,5 @@
 ---
-title: merhaba dünya
+title: selam dünya
 date: 2026-10-15
 description: massaka katliam
 ---
