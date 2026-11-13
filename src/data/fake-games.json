@@ -1,32 +1,101 @@
 [
-  {
-    "name": "Shin Megami Tensei V: Vengeance",
-    "totalHours": 95,
-    "sgdbId": 5444817,
-    "img": "/games/shin-megami-tensei-v-vengeance.png"
-  },
-  {
-    "name": "Shin Megami Tensei III: Nocturne HD Remaster",
-    "totalHours": 70,
-    "sgdbId": 5268114,
-    "img": "/games/shin-megami-tensei-iii-nocturne-hd-remaster.png"
-  },
-  {
-    "name": "Catherine: Full Body",
-    "totalHours": 48,
-    "sgdbId": 5252717,
-    "img": "/games/catherine-full-body.png"
-  },
-  {
-    "name": "Shin Megami Tensei: Digital Devil Saga",
-    "totalHours": 55,
-    "sgdbId": 38976,
-    "img": "/games/shin-megami-tensei-digital-devil-saga.png"
-  },
-  {
-    "name": "Pandora's Tower",
-    "totalHours": 38,
-    "sgdbId": 5250212,
-    "img": "/games/pandora-s-tower.png"
-  }
-]
+>>   {
+>>     "name": "Shin Megami Tensei V: Vengeance",
+>>     "totalHours": 95,
+>>     "sgdbId": 5444817,
+>>     "img": "/games/shin-megami-tensei-v-vengeance.png"
+>>   },
+>>   {
+>>     "name": "Shin Megami Tensei III: Nocturne HD Remaster",
+>>     "totalHours": 70,
+>>     "sgdbId": 5268114,
+>>     "img": "/games/shin-megami-tensei-iii-nocturne-hd-remaster.png"
+>>   },
+>>   {
+>>     "name": "Catherine: Full Body",
+>>     "totalHours": 48,
+>>     "sgdbId": 5252717,
+>>     "img": "/games/catherine-full-body.png"
+>>   },
+>>   {
+>>     "name": "Shin Megami Tensei: Digital Devil Saga",
+>>     "totalHours": 55,
+>>     "sgdbId": 38976,
+>>     "img": "/games/shin-megami-tensei-digital-devil-saga.png"
+>>   },
+>>   {
+>>     "name": "Pandora's Tower",
+>>     "totalHours": 38,
+>>     "sgdbId": 5250212,
+>>     "img": "/games/pandora-s-tower.png"
+>>   },
+>>   {
+>>     "name": "Dies irae ~Amantes amentes~",
+>>     "totalHours": 126.2,
+>>     "sgdbId": 520,
+>>     "img": "/games/dies-irae-amantes-amentes-.jpg"
+>>   },
+>>   {
+>>     "name": "My Cute Fuhrer",
+>>     "totalHours": 36.4,
+>>     "img": "/games/my-cute-fuhrer.jpg"
+>>   },
+>>   {
+>>     "name": "Re:ZERO -Starting Life in Another World- The Prophecy of the Throne",
+>>     "totalHours": 23.7,
+>>     "img": "/games/re-zero-starting-life-in-another-world-the-prophecy-of-the-throne.jpg"
+>>   },
+>>   {
+>>     "name": "The Vagrant",
+>>     "totalHours": 45,
+>>     "sgdbId": 16989,
+>>     "img": "/games/the-vagrant.jpg"
+>>   },
+>>   {
+>>     "name": "Danganronpa: Trigger Happy Havoc",
+>>     "totalHours": 26.2,
+>>     "sgdbId": 9572,
+>>     "img": "/games/danganronpa-trigger-happy-havoc.png"
+>>   },
+>>   {
+>>     "name": "Danganronpa 2: Goodbye Despair",
+>>     "totalHours": 22.2,
+>>     "sgdbId": 9573,
+>>     "img": "/games/danganronpa-2-goodbye-despair.png"
+>>   },
+>>   {
+>>     "name": "Danganronpa V3: Killing Harmony",
+>>     "totalHours": 15.3,
+>>     "sgdbId": 15729,
+>>     "img": "/games/danganronpa-v3-killing-harmony.png"
+>>   },
+>>   {
+>>     "name": "Danganronpa Another Episode: Ultra Despair Girls",
+>>     "totalHours": 7.2,
+>>     "sgdbId": 15272,
+>>     "img": "/games/danganronpa-another-episode-ultra-despair-girls.png"
+>>   },
+>>   {
+>>     "name": "Date A Live: Ren Dystopia",
+>>     "totalHours": 5.6,
+>>     "img": "/games/date-a-live-ren-dystopia.jpg"
+>>   },
+>>   {
+>>     "name": "Shin Megami Tensei IV",
+>>     "totalHours": 45.8,
+>>     "sgdbId": 38033,
+>>     "img": "/games/shin-megami-tensei-iv.jpg"
+>>   },
+>>   {
+>>     "name": "Shin Megami Tensei IV: Apocalypse",
+>>     "totalHours": 9.9,
+>>     "sgdbId": 5250176,
+>>     "img": "/games/shin-megami-tensei-iv-apocalypse.png"
+>>   },
+>>   {
+>>     "name": "Devil Summoner: Raidou Kuzunoha vs. the Soulless Army",
+>>     "totalHours": 25.8,
+>>     "sgdbId": 33911,
+>>     "img": "/games/devil-summoner-raidou-kuzunoha-vs-the-soulless-army.png"
+>>   }
+>> ]
